@@ -14,11 +14,17 @@ body {
   margin: 0;
 }
 
+/*Comon Style*/
 .container {
   width: 1200px;
   padding: 0px 15px 0px 15px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 /*Reset Styles*/
 h1,
@@ -58,7 +64,16 @@ button {
 /*Header*/
 .header {
 }
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .header-nav {
+  display: flex;
+  align-items: center;
+  gap: 93px;
 }
 .header-logo {
   color: #2196f3;
@@ -71,14 +86,17 @@ button {
   color: black;
 }
 .header-list {
+  display: flex;
+  gap: 50px;
 }
 .header-item {
 }
 .header-link {
+  display: block;
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 0.02em;
-  word-wrap: break-word;
+  padding: 32px 0;
 }
 .header-link:hover,
 .header-link:focus {
@@ -87,10 +105,12 @@ button {
 .header-adress {
 }
 .header-adress-link {
+  display: block;
   color: #757575;
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 0.02em;
+  padding: 32px 0;
 }
 .header-adress-link:hover,
 .header-adress-link:focus {
@@ -100,7 +120,6 @@ button {
 /*Hero*/
 .hero {
   background-color: #2f303a;
-  margin-bottom: 94px;
   padding: 200px 452px;
 }
 .hero-title {
@@ -127,7 +146,6 @@ button {
 
 /*Advantages*/
 .advantages {
-  margin-bottom: 118px;
 }
 .advantages-list {
 }
@@ -148,7 +166,6 @@ button {
 
 /*About me*/
 .about {
-  margin-bottom: 94px;
 }
 .about-title {
   font-size: 36px;
@@ -165,7 +182,6 @@ button {
 /*Our comand*/
 .our-comand {
   background-color: #f5f4fa;
-  margin-bottom: 94px;
 }
 .comand-title {
   font-size: 36px;
@@ -227,9 +243,13 @@ button {
 }
 
 /*PORTFOLIO*/
-
-/*Section Navigation*/
-.navigation {
+/*Section Works*/
+.works {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+/*works-nav*/
+.works-nav {
 }
 .navigation-list {
 }
@@ -252,8 +272,8 @@ button {
   letter-spacing: 0.03em;
 }
 
-/*Section Works*/
-.works {
+/*works-main*/
+.works-main {
 }
 .works-list {
 }
