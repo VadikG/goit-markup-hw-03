@@ -120,6 +120,8 @@ button {
 /*Hero*/
 .hero {
   background-color: #2f303a;
+}
+.hero .container {
   padding: 200px 452px;
 }
 .hero-title {
