@@ -26,6 +26,19 @@ body {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
 /*Reset Styles*/
 h1,
 h2,
@@ -60,9 +73,14 @@ button {
   cursor: pointer;
   border: none;
 }
+.img {
+  display: block;
+  max-width: 100%;
+}
 
 /*Header*/
 .header {
+  border-bottom: 1px solid #ececec;
 }
 .header .container {
   display: flex;
@@ -148,6 +166,7 @@ button {
 
 /*Advantages*/
 .advantages {
+  padding-bottom: 0;
 }
 .advantages-list {
   display: flex;
@@ -209,6 +228,10 @@ button {
 }
 .comand-item {
   text-align: center;
+  border-radius: 0px 0px 4px 4px;
+  background: #fff;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
 }
 .comand-img {
   margin-bottom: 30px;
@@ -221,6 +244,7 @@ button {
 .comand-text {
   color: #757575;
   letter-spacing: 0.03em;
+  margin-bottom: 30px;
 }
 
 /*Footer*/
@@ -307,17 +331,25 @@ button {
   gap: 30px;
 }
 .works-item {
+  width: calc((100% - 30px * 2) / 3);
+  border: 1px solid #eee;
+  background: #fff;
 }
 .works-img {
+  margin-bottom: 20px;
 }
 .works-subtitle {
+  width: 322px;
   font-size: 18px;
   font-weight: 700;
   line-height: 2;
   letter-spacing: 0.06em;
+  margin: 0 24px;
 }
 .works-text {
+  width: 322px;
   color: #757575;
   line-height: 1.87;
   letter-spacing: 0.03em;
+  margin: 0 24px 20px 24px;
 }
